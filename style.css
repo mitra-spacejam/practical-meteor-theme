@@ -1948,10 +1948,10 @@ img#wpstats { display: none; }
 
 /* Custom changes made*/
 
-#subscribe-field {
+#subscribe-field { 
     webkit-appearance: none;
     border: none;
-    background: #e7e7e7;     
+    background: #e7e7e7;
     font-size: 1em;
     color: #444;
     font-family: 'Lato', 'Helvetica Neue', sans-serif;
