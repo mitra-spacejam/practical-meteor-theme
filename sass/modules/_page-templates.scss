@@ -1,0 +1,116 @@
+// *************************************
+//
+//   Whats the name of this file?
+//   -> What goes in this file?
+//
+// *************************************
+
+/* Search --------------------------------------- */
+
+.searchform {
+  position: relative;
+  margin: 0;
+  #s {
+    width: 99%;
+    padding: 4.5% 12% 4.5% 4.5%;
+    margin: 0;
+    background: #DDD;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -webkit-font-smoothing: subpixel-antialiased;
+    color: #555;
+    &:focus {
+      outline: none;
+      color: #555;
+    }
+  }
+  .searchsubmit {
+    position: absolute;
+    overflow: visible;
+    right: 6%;
+    top: 50%;
+    margin-top: -12px;
+    width: 19px;
+    height: 19px;
+    z-index: 2;
+    border: none;
+    opacity: 0.5;
+    -moz-opacity: 0.5;
+    -webkit-opacity: 0.5;
+    border-radius: 999px;
+    -moz-border-radius: 999px;
+    -webkit-border-radius: 999px;
+    background: #272F38;
+    text-indent: -99999px;
+    &::before, &::after {
+      content: "";
+      display: block;
+      position: absolute;
+    }
+    &::before {
+      height: 5px;
+      width: 12px;
+      top: 16px;
+      right: -6px;
+      z-index: 1;
+      background: #272F38;
+      border-radius: 0 1px 1px 0;
+      -moz-border-radius: 0 1px 1px 0;
+      -webkit-border-radius: 0 1px 1px 0;
+      -webkit-transform: rotate(45deg);
+    }
+    &::after {
+      width: 13px;
+      height: 13px;
+      background: #DDD;
+      top: 3px;
+      left: 3px;
+      z-index: 3;
+      border-radius: 999px;
+      -moz-border-radius: 999px;
+      -webkit-border-radius: 999px;
+    }
+    &:hover {
+      opacity: 1;
+      -moz-opacity: 1;
+      -webkit-opacity: 1;
+    }
+  }
+}
+
+/* Archives template --------------------------------------- */
+
+.page-template-template-archives-php .post-content ul {
+  margin-left: 0;
+  list-style: none;
+  li {
+    margin-bottom: 0;
+    line-height: 130%;
+    a {
+      display: block;
+      border-bottom: 1px solid #EEE;
+      padding: 8px 0;
+    }
+    &:last-child a {
+      border-bottom: none;
+    }
+  }
+  &.children li:first-child a {
+    border-bottom: 1px solid #EEE;
+  }
+  li a {
+    span {
+      color: #999;
+    }
+    &:hover {
+      text-decoration: none;
+      color: #666;
+      background-color: #F9F9F9;
+      padding-left: 12px;
+    }
+  }
+}

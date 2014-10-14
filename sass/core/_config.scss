@@ -1,0 +1,40 @@
+// *************************************
+//
+//   Config
+//   -> Fonts, Variables
+//
+// *************************************
+
+// -------------------------------------
+//   @font-face
+// -------------------------------------
+
+// ----- Open Sans ----- //
+
+// +font-face('OpenSans', 'OpenSans')
+// +font-face('OpenSans', 'OpenSansBold', bold)
+// +font-face('OpenSans', 'OpenSansItalic', normal, italic)
+
+// -------------------------------------
+//   Colors
+// -------------------------------------
+
+// ----- Palette ----- //
+
+/* General colors */
+$white: #ffffff;
+$black: #222222;
+
+$neutral-blue: #25567B;
+$blue: #033E6B;
+$light-blue: #4888B9;
+$yellow: #FFAD40;
+$light-yellow: #FFC373;
+$strong-orange: #FF9200;
+$green: #56B849;
+$red: #c73844;
+$grey: #BFBFBF;
+$light-grey: #ECECEC;
+$dark-grey: #707070;
+$twitterBlue: #5EAADE;
+$facebookBlue: #3C599B;

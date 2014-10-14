@@ -1,0 +1,42 @@
+// *************************************
+//
+//   Whats the name of this file?
+//   -> What goes in this file?
+//
+// *************************************
+
+.nav-toggle, .mobile-menu {
+  display: none;
+}
+
+.blog-menu {
+  padding-top: 15%;
+  padding-bottom: 15%;
+  margin-top: 15%;
+  margin-bottom: 15%;
+  background: #272F38;
+  border-radius: 8px 0 0 8px;
+  -moz-border-radius: 8px 0 0 8px;
+  -webkit-border-radius: 8px 0 0 8px;
+  a {
+    position: relative;
+    display: block;
+    padding: 8px 0;
+    color: #FFF;
+    &:hover {
+      padding-left: 10px;
+      color: #FF706C;
+    }
+  }
+  .current-menu-item {
+    > a {
+      color: #FF706C;
+    }
+    a:hover {
+      padding-left: 0;
+    }
+  }
+  .sub-menu, .children {
+    margin-left: 25px;
+  }
+}

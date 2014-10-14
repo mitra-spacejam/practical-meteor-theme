@@ -1,0 +1,29 @@
+// *************************************
+//
+//   Whats the name of this file?
+//   -> What goes in this file?
+//
+// *************************************
+
+.wrapper {
+  position: relative;
+  width: 1160px;
+  max-width: 86%;
+  margin: 0 auto;
+  background: url('images/1px-white.png') right repeat-y;
+  background-size: 68% auto;
+}
+
+.sidebar {
+  width: 32%;
+  float: left;
+  margin: 7.5% 0;
+}
+
+.content {
+  position: relative;
+  width: 68%;
+  float: right;
+  background: #FFF;
+  z-index: 2;
+}

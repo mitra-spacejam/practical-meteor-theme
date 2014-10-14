@@ -1,0 +1,74 @@
+// *************************************
+//
+//   Whats the name of this file?
+//   -> What goes in this file?
+//
+// *************************************
+
+.post {
+  &.format-aside, &.format-quote {
+    border-top: none;
+    + .post {
+      border-top: none;
+    }
+  }
+}
+
+/* Format aside --------------------------------------- */
+
+.blog .format-aside, .archive .format-aside, .search .format-aside {
+  background: #EEE;
+}
+
+/* Format quote --------------------------------------- */
+
+.blog .format-quote, .archive .format-quote, .search .format-quote {
+  background: #272F38;
+}
+
+.blog .format-quote .post-meta.light, .archive .format-quote .post-meta.light, .search .format-quote .post-meta.light {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.blog .format-quote .post-meta.light a, .archive .format-quote .post-meta.light a, .search .format-quote .post-meta.light a {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.blog .format-quote .post-meta.light a:hover, .archive .format-quote .post-meta.light a:hover, .search .format-quote .post-meta.light a:hover {
+  color: #FFF;
+}
+
+.blog .format-quote .date-sep, .archive .format-quote .date-sep, .search .format-quote .date-sep {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.blog .format-quote blockquote, .archive .format-quote blockquote, .search .format-quote blockquote {
+  padding: 0;
+  text-align: center;
+  color: #FFF;
+  background: none;
+  font-size: 1.3em;
+  font-family: 'Raleway', sans-serif;
+}
+
+.blog .format-quote blockquote p, .archive .format-quote blockquote p, .search .format-quote blockquote p {
+  text-align: center;
+}
+
+.blog .format-quote blockquote cite, .archive .format-quote blockquote cite, .search .format-quote blockquote cite {
+  font-weight: 400;
+  font-size: 0.9rem;
+  text-align: center;
+  letter-spacing: 2px;
+  font-family: 'Lato', sans-serif;
+}
+
+.blog .format-quote blockquote cite, .archive .format-quote blockquote cite, .search .format-quote blockquote cite, .blog .format-quote blockquote cite a, .archive .format-quote blockquote cite a, .search .format-quote blockquote cite a {
+  color: #FFF;
+}
+
+.blog .format-quote blockquote cite a:hover, .archive .format-quote blockquote cite a:hover, .search .format-quote blockquote cite a:hover {
+  color: #FF706C;
+  text-decoration: none;
+}

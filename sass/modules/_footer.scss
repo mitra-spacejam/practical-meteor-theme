@@ -1,0 +1,18 @@
+// *************************************
+//
+//   Whats the name of this file?
+//   -> What goes in this file?
+//
+// *************************************
+
+.footer {
+  padding: 8%;
+  background: #272F38;
+  .column {
+    width: 46%;
+    margin-left: 8%;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}

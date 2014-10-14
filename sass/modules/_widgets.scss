@@ -1,0 +1,232 @@
+// *************************************
+//
+//   Whats the name of this file?
+//   -> What goes in this file?
+//
+// *************************************
+
+
+
+.widget {
+  color: #FFF;
+  padding-bottom: 40px;
+  border-bottom: 4px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 40px;
+  font-size: 0.9em;
+  &:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+}
+
+.widget-title {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  font-family: 'Raleway', sans-serif;
+  color: #FFF;
+}
+
+/* widget content */
+
+.widget-content {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 150%;
+  *:last-child {
+    margin-bottom: 0;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .textwidget {
+    line-height: 160%;
+  }
+  p {
+    line-height: 160%;
+    margin-bottom: 1em;
+  }
+  li ul {
+    padding-left: 8px;
+  }
+  ul li {
+    padding: 10px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    line-height: 140%;
+    &:first-child {
+      border-top: 0;
+    }
+  }
+}
+
+/* Widget recent entries --------------------------------------- */
+
+.widget_recent_entries li .post-date {
+  margin-left: 5px;
+  color: rgba(255, 255, 255, 0.4);
+  &:before {
+    content: "(";
+  }
+  &:after {
+    content: ")";
+  }
+}
+
+/* Widget search --------------------------------------- */
+
+.widget_search .searchform {
+  #s {
+    padding: 16px 45px 16px 16px;
+    background: #48515C;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -webkit-font-smoothing: subpixel-antialiased;
+    color: #FFF;
+    &:active {
+      color: #FFF;
+    }
+  }
+  .searchsubmit {
+    right: 21px;
+    background: #FFF;
+    &:before {
+      background: #FFF;
+    }
+    &:after {
+      background: #48515C;
+    }
+  }
+}
+
+/* Widget tag cloud --------------------------------------- */
+
+.widget_tag_cloud .tagcloud a {
+  font-size: 13px !important;
+}
+
+.tagcloud a {
+  display: block;
+  float: left;
+  padding: 8px 11px;
+  line-height: 1;
+  margin: 0 5px 5px 0;
+  background: rgba(0, 0, 0, 0.2);
+  color: rgba(255, 255, 255, 0.5);
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  &:hover {
+    background: #FF706C;
+    text-decoration: none;
+    color: #FFF;
+  }
+}
+
+/* Widget calendar --------------------------------------- */
+
+#wp-calendar {
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  a {
+    color: #FF706C;
+  }
+  text-align: center;
+  caption, tr, td, th {
+    text-align: center;
+  }
+  caption, th, td {
+    padding: 4% 2%;
+  }
+  caption {
+    text-transform: capitalize;
+  }
+  thead {
+    border-top: 1px solid #48515C;
+    border-bottom: 1px solid #48515C;
+    th {
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 0.9em;
+    }
+  }
+  tfoot {
+    border-top: 1px solid #48515C;
+    td {
+      padding: 0;
+    }
+    #prev {
+      text-align: left;
+    }
+    #next {
+      text-align: right;
+    }
+    a {
+      display: block;
+      color: rgba(255, 255, 255, 0.5);
+      padding: 0.6em 0;
+      &:hover {
+        text-decoration: none;
+        color: #FF6558;
+      }
+    }
+  }
+}
+
+/* Widget Flickr --------------------------------------- */
+
+.flickr_badge_image {
+  width: 30%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  overflow: hidden;
+  float: left;
+  line-height: 0;
+  a {
+    img {
+      display: block;
+      padding: 5px;
+      background: rgba(255, 255, 255, 0.1);
+    }
+    &:hover img {
+      background: #FF706C;
+    }
+  }
+}
+
+#flickr_badge_image1, #flickr_badge_image4, #flickr_badge_image7, #flickr_badge_image10, #flickr_badge_image13, #flickr_badge_image16, #flickr_badge_image19, #flickr_badge_image22, #flickr_badge_image25 {
+  margin-left: 0;
+}
+
+.widgetmore a {
+  display: block;
+  clear: both;
+  padding: 0.5em 0;
+}
+
+/* Widget Dribbble --------------------------------------- */
+
+.dribbble-shot {
+  display: block;
+  width: 47.5%;
+  margin-bottom: 5%;
+  margin-right: 5%;
+  padding: 5px;
+  overflow: hidden;
+  float: left;
+  background: rgba(255, 255, 255, 0.1);
+  img {
+    display: block;
+  }
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+  &:hover {
+    background: #FF706C;
+  }
+}

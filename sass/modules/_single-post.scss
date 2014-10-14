@@ -1,0 +1,38 @@
+// *************************************
+//
+//   Whats the name of this file?
+//   -> What goes in this file?
+//
+// *************************************
+
+.post-cat-tags {
+  margin: 0 8% 4% 8%;
+  position: relative;
+  font-size: 0.9em;
+  font-weight: 400;
+  color: #999;
+  a:hover {
+    text-decoration: underline;
+  }
+  p {
+    display: inline-block;
+    line-height: 130%;
+  }
+}
+
+.post-categories {
+  margin-right: 20px;
+}
+
+.post-tags {
+  margin-top: 10px;
+}
+
+/* post-nav */
+
+.archive-nav.post-nav {
+  background: #272F38;
+  a {
+    background: #1B2027;
+  }
+}

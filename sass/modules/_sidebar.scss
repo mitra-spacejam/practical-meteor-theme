@@ -1,0 +1,33 @@
+// *************************************
+//
+//   Whats the name of this file?
+//   -> What goes in this file?
+//
+// *************************************
+
+.blog-header, .blog-menu, .sidebar .widgets {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.blog-title a {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.75em;
+  line-height: 120%;
+  font-weight: 700;
+  color: #FFF;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Raleway', sans-serif;
+  &:hover {
+    color: #FF706C;
+  }
+}
+
+.blog-description {
+  font-family: 'Raleway', sans-serif;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 400;
+  line-height: 120%;
+}

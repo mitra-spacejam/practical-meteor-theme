@@ -1,0 +1,35 @@
+// *************************************
+//
+//   Whats the name of this file?
+//   -> What goes in this file?
+//
+// *************************************
+
+.widget_search .searchform #s {
+  color: #fff !important;
+}
+
+#disqus_thread {
+  padding: 8%;
+}
+
+.contact-form label {
+  margin-bottom: 10px !important;
+}
+
+.contact-submit input[type=submit] {
+  background: #272F38;
+  padding: 15px 18px 18px;
+  color: #FFF;
+  font-size: 0.85em;
+  line-height: 1;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border: none;
+  &:hover {
+    background: #FF706C;
+    color: #FFF;
+    text-decoration: none;
+  }
+}

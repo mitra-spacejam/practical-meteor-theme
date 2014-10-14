@@ -1,0 +1,332 @@
+// *************************************
+//
+//   Whats the name of this file?
+//   -> What goes in this file?
+//
+// *************************************
+
+.post-content {
+  font-size: 1.075em;
+  a:hover {
+    text-decoration: underline;
+  }
+  p, blockquote, ul, ol, address, dl, .wp-caption, pre {
+    line-height: 170%;
+    margin-bottom: 1.1em;
+  }
+  > *:first-child {
+    margin-top: 0;
+  }
+  *:last-child {
+    margin-bottom: 0;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin: 50px 0 20px;
+    color: #444;
+    line-height: 120%;
+  }
+  h1 {
+    font-size: 2em;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 1.75em;
+    font-weight: 700;
+  }
+  h3 {
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+  h4 {
+    font-size: 1.25em;
+  }
+  h5 {
+    font-size: 1.1em;
+  }
+  h6 {
+    font-size: 0.9em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  h1 + {
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 30px;
+    }
+  }
+  h2 + {
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 30px;
+    }
+  }
+  h3 + {
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 30px;
+    }
+  }
+  h4 + {
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 30px;
+    }
+  }
+  h5 + {
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 30px;
+    }
+  }
+  h6 + {
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 30px;
+    }
+  }
+  blockquote {
+    padding: 1em;
+    font-size: 1.1em;
+    line-height: 150%;
+    color: #666;
+    background: #EEE;
+    font-family: 'Raleway', 'Helvetica Neue', sans-serif;
+  }
+  cite {
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 140%;
+    color: #666;
+    font-size: 0.9rem;
+    &:before {
+      content: "— ";
+    }
+  }
+  blockquote cite {
+    display: block;
+    margin-top: 1em;
+    em {
+      font-style: italic;
+      font-weight: bold;
+    }
+  }
+}
+
+em, q {
+  font-style: italic;
+}
+
+.post-content {
+  strong em, em strong {
+    font-weight: bold;
+    font-style: italic;
+  }
+  big {
+    font-size: 1.25em;
+  }
+}
+
+abbr, acronym {
+  cursor: help;
+}
+
+code, kbd, pre {
+  font-size: 0.85em;
+  background: #EEE;
+  font-family: Menlo, Monaco, monospace;
+}
+
+.post-content {
+  .highlight {
+    background: #fcf8a5;
+    width: auto;
+    display: inline;
+    padding: 2px 3px;
+  }
+  kbd, code {
+    padding: 5px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+  }
+  dl {
+    line-height: 160%;
+    dt {
+      font-weight: bold;
+    }
+  }
+  hr {
+    width: 50%;
+    height: 4px;
+    background: #EEE;
+    margin: 2em auto;
+    border: 0;
+  }
+  ul {
+    list-style: disc;
+    margin-left: 1.5em;
+    ul {
+      list-style: circle;
+      ul {
+        list-style: square;
+      }
+    }
+  }
+  ol {
+    list-style: decimal;
+    margin-left: 1.5em;
+    ol {
+      list-style: lower-alpha;
+      ol {
+        list-style: lower-roman;
+      }
+    }
+  }
+  ul {
+    ul, ol {
+      margin-bottom: 0;
+    }
+  }
+  ol {
+    ul, ol {
+      margin-bottom: 0;
+    }
+  }
+  li {
+    margin-bottom: 0.5em;
+    line-height: 170%;
+  }
+  ol > li:last-child, ul > li:last-child {
+    margin-bottom: 0;
+  }
+  address {
+    padding: 3% 3.5%;
+    background: #F1F1F1;
+  }
+  pre {
+    white-space: pre-wrap;
+    /* css-3 */
+    white-space: -moz-pre-wrap;
+    /* Mozilla, since 1999 */
+    white-space: -pre-wrap;
+    /* Opera 4-6 */
+    white-space: -o-pre-wrap;
+    /* Opera 7 */
+    word-wrap: break-word;
+    /* Internet Explorer 5.5+ */
+    line-height: 140%;
+    padding: 2% 2.5%;
+    background: #f1f1f1;
+  }
+  a.more-link {
+    display: inline-block;
+    background: #272F38;
+    padding: 15px 18px 18px;
+    color: #FFF;
+    font-size: 0.85em;
+    line-height: 1;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    &:hover {
+      background: #FF706C;
+      color: #FFF;
+      text-decoration: none;
+    }
+  }
+}
+
+/* Post media --------------------------------------- */
+
+img.alignleft, .alignleft img, img.aligncenter, .aligncenter img, img.alignright, .alignright img {
+  box-sizing: border-box;
+  padding: 5px;
+  border: 1px solid #EEE;
+}
+
+.post-content {
+  .alignleft, .alignright {
+    margin-bottom: 1.2em;
+  }
+  .wp-caption {
+    .alignleft, .alignright {
+      margin-bottom: 0;
+    }
+  }
+  .alignleft {
+    float: left;
+    margin-right: 1em;
+  }
+  .alignright {
+    float: right;
+    margin-left: 1em;
+  }
+  .aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .alignnone {
+    display: inline-block;
+  }
+  .wp-caption-text {
+    font-size: 0.85em;
+    padding-top: 0.5em;
+    color: #888;
+    text-align: center;
+  }
+  .gallery-caption {
+    font-size: 0.85em;
+    padding-top: 0.5em;
+    color: #888;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 10px 15px;
+  }
+  .gallery {
+    margin-bottom: 1em !important;
+    img {
+      border: none !important;
+      max-width: 100% !important;
+      height: auto !important;
+    }
+    a {
+      display: block;
+      padding: 10px;
+    }
+    .gallery-item {
+      margin: 0 !important;
+    }
+  }
+
+  /* Tables --------------------------------------- */
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    font-size: 0.9em;
+    width: 100%;
+    margin-bottom: 1.1em;
+  }
+  th, td {
+    padding: 2%;
+    margin: 0;
+    overflow: visible;
+    line-height: 120%;
+    border-bottom: 1px solid #DDD;
+  }
+  caption {
+    color: #444;
+    text-align: center;
+    padding: 2%;
+  }
+  thead {
+    vertical-align: bottom;
+    white-space: nowrap;
+  }
+  th {
+    font-weight: bold;
+    color: #444;
+  }
+  table tbody > tr:nth-child(odd) > td {
+    background: #f9f9f9;
+  }
+}

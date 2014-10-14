@@ -1,0 +1,145 @@
+// *************************************
+//
+//   Whats the name of this file?
+//   -> What goes in this file?
+//
+// *************************************
+
+.post {
+  position: relative;
+  background: #FFF;
+  border-top: 4px solid #EEE;
+  &.page {
+    position: relative;
+    background: #FFF;
+    border-top: 4px solid #EEE;
+  }
+}
+
+.search .page {
+  position: relative;
+  background: #FFF;
+  border-top: 4px solid #EEE;
+}
+
+.post {
+  &:first-child, &.page-first-child {
+    border-top: none;
+  }
+}
+
+.post-inner {
+  padding: 8%;
+}
+
+/* Featured media --------------------------------------- */
+
+.featured-media {
+  position: relative;
+  margin: 8% 8% 0 8%;
+  + .post-inner {
+    padding-top: 6%;
+  }
+  img {
+    display: block;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+  }
+  iframe {
+    display: block;
+    border: none;
+    max-width: 100%;
+    height: auto;
+  }
+  a:hover img {
+    opacity: 0.8;
+    -moz-opacity: 0.8;
+    -webkit-opacity: 0.8;
+  }
+  .sticky-post {
+    position: absolute;
+    top: 5%;
+    right: 0;
+    padding: 8px 10px;
+    border-radius: 4px 0 0 4px;
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    background: #FF706C;
+    color: #FFF;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 10;
+  }
+}
+
+.media-caption-container {
+  position: absolute;
+  width: 95%;
+  margin-left: 2.5%;
+  bottom: 1.5em;
+  text-align: center;
+  font-size: 0.85em;
+}
+
+.media-caption {
+  display: inline-block;
+  padding: 7px 11px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  background: #262626;
+  background: rgba(38, 38, 38, 0.75);
+  color: #FFF;
+  text-align: center;
+  line-height: 130%;
+}
+
+.featured-media a:hover .media-caption {
+  background: #262626;
+  color: #FFF;
+}
+
+/* Post header --------------------------------------- */
+
+.post-header {
+  margin-bottom: 6%;
+}
+
+.post-meta {
+  font-size: 0.8em;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  &.light {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  a {
+    color: #999;
+    &:hover {
+      color: #FF706C;
+    }
+  }
+  .date-sep {
+    margin: 0 5px;
+    color: #DDD;
+  }
+}
+
+.post-title {
+  font-size: 2.3em;
+  line-height: 120%;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: #272F38;
+  -ms-word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  a {
+    color: #272F38;
+  }
+}

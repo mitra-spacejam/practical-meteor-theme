@@ -1,0 +1,86 @@
+// *************************************
+//
+//   Whats the name of this file?
+//   -> What goes in this file?
+//
+// *************************************
+
+.page-title {
+  position: relative;
+  padding: 4% 8%;
+  background: #EEE;
+  + .posts > .format-aside:first-child {
+    border-top: 4px solid #DDD;
+  }
+  h4 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: #999;
+  }
+  .name {
+    &:before {
+      content: "";
+      display: block;
+      width: 32px;
+      height: 1px;
+      background: #CCC;
+      margin: 0 auto 15px auto;
+    }
+    display: block;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.25em;
+    margin-top: 15px;
+    color: #666;
+    font-weight: 700;
+  }
+  p {
+    display: block;
+    margin-top: 25px;
+    color: #888;
+    text-align: center;
+    font-style: italic;
+    text-transform: none;
+    &:before {
+      content: "";
+      display: block;
+      width: 36px;
+      height: 2px;
+      background: #CCC;
+      margin: 0 auto 20px;
+    }
+  }
+}
+
+/* Archive nav --------------------------------------- */
+
+.archive-nav {
+  padding: 7% 8%;
+  background: #EEE;
+  font-size: 0.9em;
+  a {
+    margin: 0;
+    padding: 18px 20px;
+    background: #353E49;
+    float: left;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    color: #FFF;
+    &:hover {
+      background: #FF706C;
+      color: #FFF;
+    }
+  }
+  .post-nav-older {
+    margin-right: 10px;
+  }
+  .post-nav-newer {
+    float: right;
+    text-align: right;
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,387 @@
+// *************************************
+//
+//   Whats the name of this file?
+//   -> What goes in this file?
+//
+// *************************************
+
+.comments, .comment-respond {
+  padding: 8%;
+}
+
+.post + .comments {
+  border-top: 2px solid #EEE;
+}
+
+.comments-title, #reply-title, .pingbacks-title {
+  font-size: 1.75em;
+  font-weight: 400;
+  color: #272F38;
+}
+
+.comments-title {
+  margin-bottom: 8%;
+}
+
+li {
+  &.comment {
+    margin-bottom: 25px;
+    position: relative;
+  }
+  > div.comment {
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #EEE;
+  }
+}
+
+.commentlist > li:first-child > div.comment:first-child {
+  border-top: 1px solid #EEE;
+  padding-top: 25px;
+}
+
+.children {
+  > li > div.comment {
+    padding-left: 10%;
+  }
+  .children {
+    > li > div.comment {
+      padding-left: 20%;
+    }
+    .children {
+      > li > div.comment {
+        padding-left: 30%;
+      }
+      .children {
+        > li > div.comment {
+          padding-left: 40%;
+        }
+        .children > li > div.comment {
+          padding-left: 50%;
+        }
+      }
+    }
+  }
+}
+
+.comment .children li:last-child {
+  margin-bottom: 0;
+}
+
+.commentlist > li.comment {
+  &:last-child, div.comment:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* Pingback list --------------------------------------- */
+
+.comments .pingbacks {
+  margin-top: 5.5%;
+}
+
+.pingbacks-inner {
+  margin: 0 auto;
+}
+
+.pingbacks-title {
+  margin-bottom: 20px;
+}
+
+.pingbacklist {
+  li {
+    padding: 0.5em;
+    line-height: 130%;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  li:nth-child(odd) {
+    background: #f9f9f9;
+  }
+  .comment-edit-link {
+    color: #999;
+    &:hover {
+      color: #444;
+      text-decoration: none;
+    }
+  }
+}
+
+/* Comment meta --------------------------------------- */
+
+.comment-meta {
+  margin-bottom: 1em;
+  .avatar {
+    display: block;
+    height: 50px;
+    width: 50px;
+    border-radius: 999px;
+    -moz-border-radius: 999px;
+    -webkit-border-radius: 999px;
+    float: left;
+  }
+}
+
+.comment-actions {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  a {
+    margin-left: 8px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.comment-meta-content {
+  margin-left: 70px;
+  padding-top: 7px;
+  cite {
+    font-size: 1.075em;
+    color: #444;
+    margin-bottom: 5px;
+    display: block;
+    font-weight: 700;
+  }
+}
+
+.bypostauthor .comment-meta-content cite .post-author {
+  font-weight: 400;
+  color: #999;
+  margin-left: 3px;
+  letter-spacing: 0;
+}
+
+.comment-meta-content {
+  cite a {
+    color: #444;
+    &:hover {
+      color: #FF706C;
+    }
+  }
+  p {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    a {
+      color: #BBB;
+      &:hover {
+        color: #FF706C;
+      }
+    }
+  }
+}
+
+.comment-awaiting-moderation {
+  position: absolute;
+  right: 0;
+  top: 4px;
+  font-weight: bold;
+  display: block;
+  padding: 10px;
+  background: #CCC;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  font-size: 0.8rem;
+  color: #FFF;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  &:hover {
+    background: #2d2d2d;
+  }
+}
+
+/* Comment nav below --------------------------------------- */
+
+.comment-nav-below {
+  padding-top: 5%;
+  background: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  a {
+    color: #666;
+  }
+}
+
+/* Comment content --------------------------------------- */
+
+.comment-content {
+  margin-left: 70px;
+  font-size: 1em;
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 1.25em;
+    font-weight: 500;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-transform: none;
+  }
+}
+
+/* Respond --------------------------------------- */
+
+.comment-respond {
+  border-top: 4px solid #EEE;
+}
+
+#reply-title {
+  margin-bottom: 20px;
+}
+
+#respond {
+  a:hover {
+    text-decoration: underline;
+  }
+  .content-section-right {
+    border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    -webkit-border-radius: 0 0 4px 4px;
+    border-top: 1px solid #EEE;
+    z-index: 12;
+  }
+}
+
+.nocomments {
+  padding: 8%;
+  color: #666;
+  text-align: center;
+}
+
+#cancel-comment-reply-link {
+  margin-left: 10px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+#respond {
+  p {
+    line-height: 150%;
+  }
+  code {
+    line-height: 150%;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+  }
+}
+
+.comment-notes, .logged-in-as {
+  margin-bottom: 2em;
+  color: #666;
+}
+
+#respond form label {
+  display: none;
+}
+
+.required {
+  color: #c00;
+}
+
+.comment-form-author .required, .comment-form-email .required, .comment-form-url .required, .comment-form-comment .required {
+  display: none;
+}
+
+.content {
+  form {
+    input {
+      &[type="text"], &[type="email"], &.password {
+        -webkit-appearance: none;
+        border: none;
+        background: #e7e7e7;
+        font-size: 1em;
+        color: #444;
+        font-family: 'Lato', 'Helvetica Neue', sans-serif;
+        border-radius: 3px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        padding: 2%;
+        margin: 0;
+        width: 100%;
+        border: 1px solid #EEE;
+      }
+    }
+    textarea {
+      -webkit-appearance: none;
+      border: none;
+      background: #e7e7e7;
+      font-size: 1em;
+      color: #444;
+      font-family: 'Lato', 'Helvetica Neue', sans-serif;
+      border-radius: 3px;
+      -moz-border-radius: 3px;
+      -webkit-border-radius: 3px;
+      padding: 2%;
+      margin: 0;
+      width: 100%;
+      border: 1px solid #EEE;
+      line-height: 160%;
+      height: 250px;
+    }
+    input {
+      &[type="text"]:focus, &[type="email"]:focus, &.password:focus {
+        outline: none;
+        background-color: #EEE;
+        color: #444;
+      }
+    }
+    textarea:focus {
+      outline: none;
+      background-color: #EEE;
+      color: #444;
+    }
+  }
+  #respond form input {
+    width: 75%;
+    margin-bottom: 1em;
+  }
+  input[type="file"] {
+    padding: 10px;
+    background: #FAFAFA;
+    border: 1px solid #EEE;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+  }
+  .button, #respond input[type="submit"] {
+    display: inline-block;
+    width: auto;
+    max-width: none;
+    padding: 16px;
+    margin-bottom: 0;
+    border: none;
+    background: #272F38;
+    color: #FFF;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.925rem;
+    line-height: 1;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+  }
+  .button:hover, #respond input[type="submit"]:hover {
+    cursor: pointer;
+    background: #FF706C;
+    color: #FFF;
+    text-decoration: none;
+  }
+  .button:active, #respond input[type="submit"]:active {
+    top: 1px;
+    position: relative;
+  }
+}
+
+#respond p.form-allowed-tags {
+  margin-top: 1.5em;
+  line-height: 160%;
+}
+
+.form-submit {
+  margin-top: 1.5em;
+}

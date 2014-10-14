@@ -1,0 +1,66 @@
+// *************************************
+//
+//   1. Core
+//   -> What goes in this file?
+//
+// *************************************
+
+
+body {
+  margin: 0;
+  padding: 0;
+  border: none;
+  color: #555;
+  background: #353E49;
+  font-family: 'Lato', 'Helvetica Neue', sans-serif;
+  font-size: 17px;
+  -webkit-font-smoothing: subpixel-antialiased;
+  a {
+    color: #FF706C;
+    text-decoration: none;
+    &:hover {
+      color: #FF706C;
+      text-decoration: none;
+    }
+  }
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.clear {
+  clear: both;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+::selection {
+  background: #333;
+  color: #FFF;
+}
+
+::-webkit-input-placeholder, :-ms-input-placeholder {
+  color: #A9A9A9;
+}
+
+
+
+
